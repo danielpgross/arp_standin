@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    arp_standin (0.1.0)
+      packetfu (~> 1.1)
+      pcaprub (~> 0.13)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    packetfu (1.1.13)
+      pcaprub
+    pcaprub (0.13.1)
+    rake (13.0.1)
+
+PLATFORMS
+  aarch64-linux
+  ruby
+
+DEPENDENCIES
+  arp_standin!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.4.8

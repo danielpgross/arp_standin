@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/arp_standin'
+STDOUT.sync = true
+ArpStandin::Server.new(
+    standin_ip_addr: ENV["STANDIN_IP_ADDR"],
+    standin_mac_addr: ENV["STANDIN_MAC_ADDR"],
+    network_interface: ENV["NETWORK_INTERFACE"]
+  ).run!

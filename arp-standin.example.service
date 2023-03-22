@@ -1,0 +1,13 @@
+[Unit]
+Description=ARP Stand-in
+
+[Service]
+ExecStart=/usr/local/bin/arp_standin
+Environment="STANDIN_MAC_ADDR="
+Environment="STANDIN_IP_ADDR="
+Environment="NETWORK_INTERFACE="
+DynamicUser=yes
+AmbientCapabilities=CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target
