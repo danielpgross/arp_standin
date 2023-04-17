@@ -2,6 +2,10 @@
 
 Respond to ARP requests on behalf of another machine. Useful for keeping a sleeping machine accessible on the network.
 
+📖 Check out the [corresponding blog post](https://dgross.ca/blog/linux-home-server-auto-sleep/) for a deeper dive into how it works.
+
+Currently only compatible with Linux (tested on Ubuntu 20.04).
+
 ## Installation
 
 Follow these instructions to install ARP Stand-in as a systemd service that runs automatically on boot:
